@@ -1,0 +1,53 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Spinner from "./Spinner.stories.tsx";
+
+<Meta of={Spinner} title="Spinner" />
+
+# Spinner
+
+Spinner component with different props.
+
+#### Example
+
+<Canvas of={Spinner.Default} />
+
+## Usage
+
+```ts
+import {Spinner} from "bagheera-ui";
+
+const Example = () => {
+  return (
+      <Spinner
+        size="small"
+      />
+  );
+};
+
+export default Example;
+```
+
+#### Arguments
+
+
+<table>
+  <tr>
+    <th>Argument</th>
+    <th>Description</th>
+    <th>Type</th>
+    <th>Required</th>
+  </tr>
+  <tr>
+    <td>size</td>
+    <td>The size of the Spinner</td>
+    <td>'small' | 'large'</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>Indicates what kind of styling the Spinner has</td>
+    <td>'default' | 'inverse'</td>
+    <td>No</td>
+  </tr>
+</table>

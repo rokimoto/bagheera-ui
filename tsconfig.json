@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "target": "ES2022",
+    "skipLibCheck": true,
+    "allowJs": true,
+    "outDir": "lib",
+    "baseUrl": ".",
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/public/*": ["./public/*"]
+    },
+    "noEmit": false,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "types": ["@testing-library/jest-dom"],
+  },
+  "compileOnSave": true,
+  "include": ["custom.d.ts", "next-env.d.ts", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": [
+    "node_modules",
+    "src/**/*.stories.tsx",
+    "lib",
+    "src/**/*.test.ts",
+    "src/config/__mocks__/**/*.ts"
+  ]
+}
